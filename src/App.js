@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Routes, Router } from 'react-router-dom';
+import { Route, Routes, NavLink } from 'react-router-dom';
 
 function App() {
 
@@ -26,8 +26,8 @@ function App() {
         <Route path="/dashboard" element={Dashboard()} />
       </Routes>
       <nav>
-        <a href="/">Home </a>
-        <a href="/dashboard"> Dashboard</a>
+        <NavLink to="/"> Home</NavLink>
+        <NavLink to="/dashboard"> Dashboard</NavLink>
       </nav>
     </div>
   );
